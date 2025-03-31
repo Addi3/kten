@@ -1,37 +1,30 @@
 {
 	"schemaVersion": 1,
 	"id": "kten",
-	"version": "${version}",
-	"name": "kten",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"version": "1.0.0",
+	"name": "Kten Mod",
+	"description": "A mod that adds the KTen entity.",
 	"authors": [
-		"Me!"
+		"Addie"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": ""
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/kten/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.addie.kten.Kten"
 		],
-		"fabric-datagen": [
-			"net.addie.kten.KtenDataGenerator"
+		"client": [
+			"net.addie.kten.KtenClient"
 		]
 	},
-	"mixins": [
-		"kten.mixins.json"
-	],
 	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabricloader": ">=0.12.0",
+		"fabric": "*",
+		"minecraft": "1.20.1"
 	}
 }

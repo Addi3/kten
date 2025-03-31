@@ -5,18 +5,17 @@ import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 
 // Made with Blockbench 4.12.4
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
 
-public class KTenModel<T extends KTenEntity> extends SinglePartEntityModel<T> {
+public class KTenEntityModel<T extends KTenEntity> extends SinglePartEntityModel<T> {
 
 	private final ModelPart KTen;
 	private final ModelPart head;
 
-	public KTenModel(ModelPart root) {
+	public KTenEntityModel(ModelPart root) {
 		this.KTen = root.getChild("KTen");
 		this.head = KTen.getChild("head");
 	}
